@@ -1,0 +1,16 @@
+node_modules/
+dist/
+dist-ssr/
+.netlify/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+link-land.zip
+coverage/
+supabase/.temp/
+supabase/.branches/

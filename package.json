@@ -1,0 +1,22 @@
+{
+  "name": "link-land",
+  "private": true,
+  "version": "1.0.0",
+  "description": "LINK-LAND - Guri iyo Dhul iibka & kirada | Somalia real-estate marketplace",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev:website",
+    "dev:website": "npm run dev -w link-land-website",
+    "dev:admin": "npm run dev -w link-land-admin",
+    "build": "npm run build -w link-land-website && npm run build -w link-land-admin",
+    "build:website": "npm run build -w link-land-website",
+    "build:admin": "npm run build -w link-land-admin",
+    "typecheck": "npm run typecheck -w link-land-website && npm run typecheck -w link-land-admin",
+    "create-super-admin": "node scripts/create-super-admin.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
